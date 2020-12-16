@@ -1,18 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import '../assets/stylesheets/application.scss';
+import App from './components/app';
 
-const Hello = ({ name }) => {
-  return (
-    <div>
-      Hello,
-      {name}
-    </div>
-  );
-};
-
+// get the ID root in the index
 const root = document.getElementById('root');
+// if the ID root exist, do
 if (root) {
-  ReactDOM.render(<Hello name="World" />, root);
+  // render the function Hello
+  ReactDOM.render(<App name="World" />, root);
 }
